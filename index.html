@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusFlow - A Minimal Daily Task Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-name">
+        <h2 id="name-todo">Your To-do</h2>
+      </div>
+
+      <div class="input">
+        <input type="text" placeholder="Add new task" class="task-add" />
+        <button type="submit" class="add-btn">Add</button>
+      </div>
+
+      <div class="total-task">
+        <h3 class = "task-count"></h3>
+        <h3 class = "task-done"></h3>
+      </div>
+
+      <p class="empty-state" style="display: none;">
+  No tasks. Take a deep breath, you’re free 😌
+</p>
+
+
+      <div class="todo-list">
+        <ul id="task-list">
+          <!-- Task items will be added here dynamically -->
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
