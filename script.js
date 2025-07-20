@@ -6,6 +6,7 @@ const taskList = document.querySelector("#task-list");
 const totalTaskEl = document.querySelector(".task-count");
 const taskDoneEl = document.querySelector(".task-done");
 const emptyState = document.querySelector(".empty-state");
+const dlticon = "❌";
 
 let taskCount = 0;
 let doneCount = 0;
@@ -55,7 +56,7 @@ function createTaskElement(taskTextValue) {
 
   const deleteBtn = document.createElement("button");
   deleteBtn.className = "delete-btn";
-  deleteBtn.textContent = "❌";
+  deleteBtn.textContent = dlticon;
   deleteBtn.setAttribute("aria-label", "Delete task");
 
   // Append children
